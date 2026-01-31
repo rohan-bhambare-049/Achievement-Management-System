@@ -251,15 +251,12 @@ def home():
     return render_template("home.html")
 
 
-<<<<<<< HEAD
 @app.route("/logout")
 def logout():
     session.clear()
     return redirect(url_for('home'))
 
 
-=======
->>>>>>> 05bcd4224e6648901d30b5fa940b287a11bf27a7
 @app.route("/student", methods=["GET", "POST"])
 def student():
     if request.method == "POST":
